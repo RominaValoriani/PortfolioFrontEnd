@@ -1,0 +1,252 @@
+:root{
+    --claro: #D1D1D1;
+    --oscuro: #010C12;
+    --azul1: #1181C8;
+    --azul2: #0C6DAB;
+    --shadow: #FD7E14;
+    --orange: #DFA87A;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+*{  
+    font-family: 'Raleway', 'century gothic', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color: var(--oscuro);
+    background-color: var(--claro);
+}
+nav{
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0em .0em .5em var(--shadow);
+    border-radius: 12px;
+}
+img.logoArgProg{
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+}
+.programa h2{
+    font-size: min(calc(1vw + .5rem), 1rem);
+    text-align: center;
+    color: var(--oscuro);
+}
+.social img{
+    width: 2.8rem;
+    margin: auto 0 auto 8px;
+
+}
+.social a{
+    text-decoration: none;
+    opacity: .4;
+}
+.social a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.imgRedes:hover{
+    box-shadow: 0 .1rem .5rem var(--shadow); 
+    /* x y blur color */
+}
+form button, .login{
+    border: .1rem solid var(--azul2); 
+    border-radius: .25rem; 
+    padding: .4rem .6rem; 
+    color: var(--claro); 
+    font-size: 1.2rem; 
+    letter-spacing: .1rem;
+    font-weight: 600;
+    background-color: var(--azul2);
+}
+.login:hover{
+    cursor: pointer; 
+    box-shadow: 0 .1rem .5rem var(--shadow); 
+    background-color: var(--azul1);
+}
+/*Login: ventana flotante*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--claro);
+    padding: 4rem;
+    box-shadow: 0 0px .8em var(--shadow);
+    position: absolute;
+    top: 6.5rem;
+}
+#ventana{
+    display: none;
+}
+#btn-cerrar{
+    position: absolute;
+    right: 4px;
+    top: 5px;
+    border: none;
+    background-color: var(--claro);
+}
+form label{
+    margin-bottom: 35px;
+}
+.bi.bi-person-fill, .bi.bi-lock-fill, .bi.bi-linkedin, .bi.bi-envelope-fill, .bi.bi-discord, .bi.bi-github{
+    font-size: 20px;
+    color: var(--azul1);
+    margin-right: 10px;
+}
+form label input{
+    outline: none;
+    border: none;
+    color: var(--oscuro);
+    border-bottom: solid 1px var(--azul2);
+    padding: 0 5px;
+    font-size: 1.2rem;
+}
+form label input::placeholder{
+    color: var(--oscuro);
+}
+.link{
+    color: var(--azul1);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+img.banner{
+    margin-top: 1rem;
+    border-radius: 20px;
+    width:100%;
+    height: auto;
+}
+img.foto-perfil{
+    width: min(calc(4rem + 6vw), 9rem);
+    height: auto;
+    border-radius: 50%;
+    margin-top: -4rem;
+ }
+ #btn-pencil{
+    border: none;
+    background-color: var(--claro);
+ }
+h1{
+    font-size: min(calc(2vw + .5rem), 2.2rem);
+    font-weight: 900;
+    text-shadow: 0 .1rem .3rem var(--shadow);
+}
+h2{
+    font-size: min(calc(1.5vw + .5rem), 1.6rem);
+    font-weight: 700;
+}
+h2.card-title{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 .1rem 1.5rem var(--shadow);
+}
+h3, section#contenedor{
+    font-size: min(calc(1vw + .5rem), 1.4rem);
+}
+a{
+    text-decoration: none;
+}
+/*Informacion de contacto*/
+div.ventana{
+    background: var(--claro);
+    padding: 25px;
+    box-shadow: 0 0px .8em var(--shadow);
+    position: absolute;
+    display: none;
+}
+#btn-cerrar{
+    position: absolute;
+    right: 4px;
+    top: 5px;
+    border: none;
+    background-color: var(--claro);
+}
+li{
+    font-size: 1.2rem;
+    list-style: none;
+    margin-top: 35px;
+}
+a.card-link{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--azul2);
+}
+/*button.btn.btn-link{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color: var(--azul1);
+}
+ Botones: Tengo interes en, Añadir seccion, Mas
+.btn-btn-primary{
+    border: .1rem solid var(--azul2); 
+    border-radius: .25rem; 
+    padding: .2rem .6rem; 
+    color: var(--claro); 
+    font-size: 1rem; 
+    letter-spacing: .1rem;
+    font-weight: 600;
+    background-color: var(--azul2);
+}
+.btn-btn-primary:hover{
+    cursor: pointer; 
+    box-shadow: 0 .1rem .5rem var(--shadow); 
+    background-color: var(--azul1);
+}
+.btn-btn-outline-secondary{
+    color: var(--oscuro); 
+    font-size: 1rem; 
+    letter-spacing: .1rem;
+    font-weight: 600;
+    background-color: var(--claro);
+    border: none;
+}
+.btn-btn-outline-secondary:hover{
+    cursor: pointer; 
+    box-shadow: 0 .1rem .5rem var(--shadow); 
+}*/
+button.btn-btn-outline-dark{
+    float: right;
+    border: none;
+    background-color: var(--claro);
+}
+p{
+    font-size: 1.2rem;
+}
+#edit-acercade{
+    width: 100%;
+    color: var(--oscuro); 
+    background-color: var(--claro);
+    box-shadow: 0em .0em .5em var(--shadow);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+button.btn.btn-outline-dark.plus{
+    float: right;
+    border: none;
+    background-color: var(--claro);
+}
+#cerrar:hover, #btn-pencil:hover, .btn-btn-outline-dark:hover, .btn.btn-outline-dark.plus:hover{
+    box-shadow: 0em .0em .5em var(--shadow);
+    border-radius: 12px;
+    cursor: pointer; 
+}
+.btn.btn-outline-dark.plus:hover{
+    color: var(--oscuro);
+}
+h3.organizacion{
+    font-weight: 600;
+}
+img.imagen-organizacion{
+    width: 65%;
+}
+div.container{
+    margin-top: 2rem;
+}
+/*div.row{
+    background-color: rgb(46, 189, 189);
+    border: .1rem solid rgb(56, 55, 55);
+}

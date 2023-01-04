@@ -1,0 +1,60 @@
+:root{
+  --claro: #D1D1D1;
+  --oscuro: #010C12;
+  --azul1: #1181C8;
+  --azul2: #0C6DAB;
+  --shadow: #FD7E14;
+  --orange: #DFA87A;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', 'century gothic', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, var(--azul1), var(--azul2));
+}
+div.ventana{
+  display: flex;
+  flex-direction: column;
+  background: var(--claro);
+  padding: 20px 25px;
+  box-shadow: 0 5px 10px var(--oscuro);
+}
+h1.card-title{
+  color: var(--oscuro);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+li{
+  list-style: none;
+  margin-top: 35px;
+}
+a{
+  color: var(--azul2);
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+a i{
+  border: none;
+  background-color: var(--claro);
+  float: right;
+  cursor: pointer;
+}
+i{
+  font-size: 20px;
+  color: var(--azul1);
+  margin-right: 10px;
+}
+p{
+  color: var(--oscuro);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
