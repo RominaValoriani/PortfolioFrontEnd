@@ -138,7 +138,6 @@ h2{
     font-weight: 700;
 }
 h2.card-title{
-    margin-top: 3rem;
     margin-bottom: 2rem;
     text-shadow: 0 .1rem 1.5rem var(--shadow);
 }
@@ -246,7 +245,7 @@ img.imagen-organizacion{
 div.container{
     margin-top: 2rem;
 }
-/*div.row{
+div.row{
     background-color: rgb(46, 189, 189);
     border: .1rem solid rgb(56, 55, 55);
 }
