@@ -245,7 +245,7 @@ img.imagen-organizacion{
 div.container{
     margin-top: 2rem;
 }
-div.row{
+/*div.row{
     background-color: rgb(46, 189, 189);
     border: .1rem solid rgb(56, 55, 55);
 }
